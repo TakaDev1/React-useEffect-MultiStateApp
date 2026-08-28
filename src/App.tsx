@@ -15,7 +15,7 @@ function App() {
     <>
       <div>
         <DisplayState count={count} name={name} />
-        <HandleCounter count={count} setCount={setCount} />
+        <HandleCounter setCount={setCount} />
         <HandleName name={name} setName={setName} />
       </div>
     </>
