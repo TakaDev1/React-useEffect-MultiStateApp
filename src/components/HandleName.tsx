@@ -12,7 +12,12 @@ const HandleName = ({ name, setName }: HandleNameInterface) => {
 
   return (
     <div>
-      <input type="text" value={name} onChange={handleName} />
+      <input
+        type="text"
+        value={name}
+        onChange={handleName}
+        className="border px-10 py-1 text-center bg-white text-black"
+      />
     </div>
   );
 };

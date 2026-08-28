@@ -19,10 +19,24 @@ const HandleCounter = ({ setCount }: HandleCounterInterface) => {
     setCount(0);
   };
   return (
-    <div>
-      <button onClick={handleIncrement}>+</button>
-      <button onClick={handleDecrement}>-</button>
-      <button onClick={handleReset}>0</button>
+    <div className="flex w-30 justify-between my-5">
+      <div>
+        <button
+          onClick={handleIncrement}
+          className="bg-green-800 px-3 py-1 rounded-xl text-white hover:opacity-70 cursor-pointer transition mr-2"
+        >
+          +
+        </button>
+        <button
+          onClick={handleDecrement}
+          className="bg-green-800 px-3 py-1 rounded-xl text-white hover:opacity-70 cursor-pointer transition"
+        >
+          -
+        </button>
+      </div>
+      <button onClick={handleReset} className="bg-gray-400 text-black px-3 py-1 rounded-xl">
+        0
+      </button>
     </div>
   );
 };

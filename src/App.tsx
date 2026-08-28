@@ -13,7 +13,8 @@ function App() {
   }, [count, name]);
   return (
     <>
-      <div>
+      <div className="min-h-screen bg-gray-800 flex flex-col items-center justify-center">
+        <h1 className="!mb-10">React-useEffect-MultiStateApp</h1>
         <DisplayState count={count} name={name} />
         <HandleCounter setCount={setCount} />
         <HandleName name={name} setName={setName} />
