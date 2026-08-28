@@ -1,6 +1,5 @@
 import React, { type Dispatch, type SetStateAction } from "react";
 interface HandleCounterInterface {
-  count: number;
   setCount: Dispatch<SetStateAction<number>>;
 }
 
